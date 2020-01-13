@@ -1,0 +1,22 @@
+﻿@page "/taskoverview"
+@inherits TaskOverviewBase
+
+<h1>Task Overview</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var taskItem in TaskItems)
+        {
+        <tr>
+            <td>@taskItem.Id</td>
+            <td>@taskItem.Name</td>
+        </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,23 @@
+﻿@page "/taskdetail/{taskId}"
+@inherits BlazorGettingStarted.Pages.TaskDetailBase
+
+
+<h1>Task Detail</h1>
+
+<div class="row">
+    <div class="col-3">
+        <label>Id</label>
+    </div>
+    <div class="col-3">
+        @TaskItem.Id
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-3">
+        <label>Name</label>
+    </div>
+    <div class="col-3">
+        @TaskItem.Name
+    </div>
+</div>
